@@ -1,5 +1,6 @@
 import React from "react";
+import { FooterContainer } from "./styles/styles";
 
 export const Footer = () => {
-  return <footer>footer</footer>;
+  return <FooterContainer>Copyright &copy; ProShop</FooterContainer>;
 };

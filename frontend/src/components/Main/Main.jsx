@@ -1,10 +1,11 @@
 import React from "react";
 import { MainContainer } from "./styles/styles";
+import { HomeScreen } from "../../screens/HomeScreen";
 
 export const Main = () => {
   return (
     <MainContainer>
-      <h1>Welcome to Proshop</h1>
+      <HomeScreen />
     </MainContainer>
   );
 };
