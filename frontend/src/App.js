@@ -1,14 +1,19 @@
 import React from "react";
 import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
+import { Main } from "./components/Main";
+import { GlobalStyle } from "./styles/globals";
+import { lightTheme } from "./styles/theme";
+import { ThemeProvider } from "styled-components";
 
 const App = () => {
   return (
-    <>
+    <ThemeProvider theme={lightTheme}>
+      <GlobalStyle />
       <Header />
-      <h1>Welcome to ProShop</h1>
+      <Main />
       <Footer />
-    </>
+    </ThemeProvider>
   );
 };
 
